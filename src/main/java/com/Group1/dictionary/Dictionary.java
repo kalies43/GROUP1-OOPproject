@@ -26,21 +26,8 @@ public abstract class Dictionary {
         return wordSet.contains(word.trim().toLowerCase());
     }
 
-    public int size() {
-        return wordSet.size();
-    }
 
-    public Set<String> getWords() {
-        return Collections.unmodifiableSet(wordSet);
-    }
 
-    public String getRandomWord() {
-        if (wordSet.isEmpty()) return null;
-        int index = new Random().nextInt(wordSet.size());
-        Iterator<String> it = wordSet.iterator();
-        for (int i = 0; i < index; i++) it.next();
-        return it.next();
-    }
 
     // Abstract methods for game-specific logic
     public abstract boolean isValidWord(String word);

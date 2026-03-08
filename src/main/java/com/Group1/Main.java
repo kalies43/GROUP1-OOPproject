@@ -7,7 +7,13 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
+    static Scanner scanner = new Scanner(System.in);
+
+    static void main() {
+        InputWord();
+    }
+    static void InputWord(){
+
         try {
             // Load sowpods.txt from the resources folder
             InputStream dictStream = Main.class.getResourceAsStream("/sowpods.txt");
@@ -16,10 +22,9 @@ public class Main {
                 return;
             }
             Dictionary dictionary = new BookwormDictionary(dictStream);
-            System.out.println("Loaded " + dictionary.size() + " words.");
+
 
             // Simple game loop
-            Scanner scanner = new Scanner(System.in);
             System.out.println("Enter a word (or '$quit'):");
             while (true) {
                 String input = scanner.nextLine();
@@ -28,6 +33,9 @@ public class Main {
                 if (dictionary.isValidWord(input)) {
                     int score = dictionary.getWordScore(input);
                     System.out.println("Valid! Score: " + score);
+
+
+
                 } else {
                     System.out.println("Not a valid word.");
                 }
