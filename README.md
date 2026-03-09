@@ -3,6 +3,10 @@ This project is inspired from the game POPCAP Games' Bookworm Adventures Deluxe.
 
 IMPORTANT: para sa mga members. Mag comment kayo ng mga binago nyo na code i.e, line 3 then explain nyo kung ano
 
+for members: Baka i assign ko nalang sainyo ung pag Documentation ng codes
+
+
+
 Gagawa tayo ng laro na tulad ng bookworm. Ung combat lang ung gagayahin natin. bale mangyayare ay mag bibigay tayo ng letters na makikita ng user at mag pipili sila sa mga letters na yun ng possible words tapos may scoring system din ung kada letters.
 
 Scores per letter..
